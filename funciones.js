@@ -18,16 +18,20 @@ const resta=(a,b) => a-b
 // }
 
 // misma funcion en arrow
-let x= parseInt(prompt("introdce numero"));
+let x= parseInt(prompt(`introdce numero`));
 const detectarParoImpar = (x)=>{
     // console.log("x vale:", x)    solo ers para debbuguear
     if (isNaN(x)){
-        return "no es un numero";
+        return `lo que escribiste fue ${x} y no es un numero`;
     }else if (x%2 == 0){
-        return "es par";
+        return `tu numero es el ${x} y es par`
     }else{
-        return "es impar"
+        return `tu numero es el ${x} y es impar`;
     }
 }
 
-console.log(detectarParoImpar());
+console.log(detectarParoImpar(x));
+
+
+
+
